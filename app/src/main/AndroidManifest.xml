@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_treine_facil_sem_fundo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TreineFacil">
+        <activity android:name=".Menu"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

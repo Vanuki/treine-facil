@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TreineFacil</string>
+    <string name="email">E-MAIL</string>
+    <string name="senha">SENHA</string>
+    <string name="login">LOGIN</string>
+    <string name="registrarse">Registrar-se</string>
+    <string name="esqueci">Esqueci minha senha</string>
 </resources>
