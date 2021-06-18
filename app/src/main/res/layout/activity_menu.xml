@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/c_1"
         android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toTopOf="@+id/c_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="200sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="Paulo Muzzy"
@@ -33,7 +33,6 @@
             android:id="@+id/imageView2"
             android:layout_width="94dp"
             android:layout_height="94dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_paulo" />
@@ -44,7 +43,8 @@
             android:layout_height="38dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/ic_chat_green_24dp" />
 
         <TextView
@@ -54,8 +54,8 @@
             android:text="Especialização"
             android:textColor="@color/bright_green"
             android:textSize="17sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
@@ -65,16 +65,37 @@
             android:text="Musculação"
             android:textColor="@color/yellow"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="57dp"
+            android:layout_height="38dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/ic_location_green_24dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Km"
+            android:textColor="@color/bright_green"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/c_2"
         android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toTopOf="@+id/c_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
@@ -83,7 +104,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="200sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="Leandro Twin"
@@ -97,7 +118,6 @@
             android:id="@+id/imageView2"
             android:layout_width="94dp"
             android:layout_height="94dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_leandro" />
@@ -108,7 +128,8 @@
             android:layout_height="38dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/ic_chat_green_24dp" />
 
         <TextView
@@ -118,8 +139,8 @@
             android:text="Especialização"
             android:textColor="@color/bright_green"
             android:textSize="17sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
@@ -129,17 +150,37 @@
             android:text="Aeróbico"
             android:textColor="@color/yellow"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="57dp"
+            android:layout_height="38dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/ic_location_green_24dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Km"
+            android:textColor="@color/bright_green"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/c_3"
         android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toTopOf="@+id/c_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -148,7 +189,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="205sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="Renato Cariane"
@@ -162,7 +203,6 @@
             android:id="@+id/imageView2"
             android:layout_width="94dp"
             android:layout_height="94dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_renato" />
@@ -173,7 +213,8 @@
             android:layout_height="38dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/ic_chat_green_24dp" />
 
         <TextView
@@ -183,8 +224,8 @@
             android:text="Especialização"
             android:textColor="@color/bright_green"
             android:textSize="17sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
@@ -194,17 +235,37 @@
             android:text="Funcional"
             android:textColor="@color/yellow"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="57dp"
+            android:layout_height="38dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/ic_location_green_24dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Km"
+            android:textColor="@color/bright_green"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/c_4"
         android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -212,7 +273,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="200sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="Angela Borges"
@@ -226,7 +287,6 @@
             android:id="@+id/imageView2"
             android:layout_width="94dp"
             android:layout_height="94dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_anegla" />
@@ -237,7 +297,8 @@
             android:layout_height="38dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/ic_chat_green_24dp" />
 
         <TextView
@@ -247,8 +308,8 @@
             android:text="Especialização"
             android:textColor="@color/bright_green"
             android:textSize="17sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
@@ -258,10 +319,30 @@
             android:text="Natação"
             android:textColor="@color/yellow"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="57dp"
+            android:layout_height="38dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/ic_location_green_24dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16 Km"
+            android:textColor="@color/bright_green"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -274,17 +355,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="INSTRUTORES"
-        android:textColor="@color/yellow"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/c_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
